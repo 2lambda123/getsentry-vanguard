@@ -27,7 +27,7 @@ export async function getSession(request: Request | ExpressRequest) {
 }
 
 export async function getUser(
-  session: Session<SessionPayload, SessionPayload>,
+  session: Session<SessionPayload, SessionPayload>
 ) {
   return session.get("user");
 }
@@ -56,7 +56,7 @@ export async function createSession({
             : undefined,
         }),
       },
-    },
+    }
   );
 }
 

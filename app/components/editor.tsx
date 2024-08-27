@@ -50,7 +50,7 @@ function handleUploadImages(textareaEl: HTMLTextAreaElement, fileList: File[]) {
       replaceText(
         cursor,
         loadingText,
-        `![${uploadedImage.originalFilename}](${uploadedImage.url})`,
+        `![${uploadedImage.originalFilename}](${uploadedImage.url})`
       );
     } catch (err: any) {
       console.error(err);
@@ -67,7 +67,7 @@ const onUploadFiles = (
     | DragEvent<HTMLTextAreaElement>
     | ClipboardEvent<HTMLTextAreaElement>
     | ChangeEvent<HTMLInputElement>,
-  fileList: FileList | null,
+  fileList: FileList | null
 ) => {
   if (!fileList) return;
 

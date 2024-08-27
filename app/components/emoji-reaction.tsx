@@ -15,7 +15,7 @@ export function EmojiButton({
           : "text-emoji-default-text-light dark:text-emoji-default-text-dark",
         "hover:text-emoji-highlight-text-light dark:hover:text-emoji-highlight-text-dark",
         "hover:bg-emoji-highlight-bg-light dark:hover:bg-emoji-highlight-bg-dark",
-        "rounded-md px-3 py-2 inline-flex items-center font-serif gap-1",
+        "rounded-md px-3 py-2 inline-flex items-center font-serif gap-1"
       )}
       {...props}
     />

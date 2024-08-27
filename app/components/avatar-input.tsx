@@ -66,7 +66,7 @@ export default function AvatarInput({
       <div
         className={classNames(
           "cursor-pointer opacity-80 bg-bg-light dark:bg-bg-dark absolute inset-0 items-center justify-center",
-          isHover ? "flex" : "hidden",
+          isHover ? "flex" : "hidden"
         )}
       >
         <UploadIcon width="64" height="64" />

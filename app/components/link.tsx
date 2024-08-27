@@ -12,7 +12,7 @@ export default function Link({
     <UnstyledLink
       className={classNames(
         color === "default" ? "text-link-light dark:text-link-dark" : "",
-        "hover:underline",
+        "hover:underline"
       )}
       {...props}
     />
