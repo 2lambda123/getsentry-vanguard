@@ -16,7 +16,7 @@ describe("GET /admin/categories/new", () => {
         }),
         params: {},
         context: { user: DefaultFixtures.DEFAULT_USER },
-      }),
+      })
     );
   });
 });
@@ -30,7 +30,7 @@ describe("POST /admin/categories/new", () => {
         }),
         params: {},
         context: { user: DefaultFixtures.DEFAULT_USER },
-      }),
+      })
     );
   });
 

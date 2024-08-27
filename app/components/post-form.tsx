@@ -138,7 +138,7 @@ export default function PostForm({
   }
 
   const [categoryId, setCategoryId] = useState<string | null>(
-    initialData?.categoryId || categoryList.find(() => true)?.id || null,
+    initialData?.categoryId || categoryList.find(() => true)?.id || null
   );
 
   const selectedCategory = categoryList.find((c) => c.id === categoryId);

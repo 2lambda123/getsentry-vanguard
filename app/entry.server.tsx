@@ -41,7 +41,7 @@ export default async function handleRequest(...args: DocRequestArgs) {
             new Response(stream, {
               headers: responseHeaders,
               status: didError ? 500 : responseStatusCode,
-            }),
+            })
           );
 
           pipe(body);
@@ -53,7 +53,7 @@ export default async function handleRequest(...args: DocRequestArgs) {
           didError = true;
           console.error(error);
         },
-      },
+      }
     );
 
     setTimeout(abort, ABORT_DELAY);
@@ -62,7 +62,7 @@ export default async function handleRequest(...args: DocRequestArgs) {
 
 export function handleError(
   error: unknown,
-  { request }: LoaderFunctionArgs | ActionFunctionArgs,
+  { request }: LoaderFunctionArgs | ActionFunctionArgs
 ): void {
   if (error instanceof Error) {
     Sentry.captureRemixServerException(error, "remix.server", request);

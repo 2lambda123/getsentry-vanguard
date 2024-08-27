@@ -18,7 +18,7 @@ export async function loader({ request, context }: LoaderFunctionArgs) {
   const feedListPaginated = await paginate(
     getFeedList,
     { userId: user.id },
-    cursor,
+    cursor
   );
   return json({ feedListPaginated });
 }

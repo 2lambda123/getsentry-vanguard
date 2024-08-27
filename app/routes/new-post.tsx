@@ -38,7 +38,7 @@ export async function action({ request, context }: ActionFunctionArgs) {
   if (typeof categoryId !== "string" || categoryId.length === 0) {
     return json(
       { errors: { categoryId: "Category is required" } },
-      { status: 400 },
+      { status: 400 }
     );
   }
 
@@ -49,7 +49,7 @@ export async function action({ request, context }: ActionFunctionArgs) {
   if (typeof content !== "string" || content.length === 0) {
     return json(
       { errors: { content: "Content is required" } },
-      { status: 400 },
+      { status: 400 }
     );
   }
 
@@ -64,7 +64,7 @@ export async function action({ request, context }: ActionFunctionArgs) {
     if (invalid) {
       return json<ActionData>(
         { errors: { feedId: "Invalid feed" } },
-        { status: 400 },
+        { status: 400 }
       );
     }
   }
@@ -73,7 +73,7 @@ export async function action({ request, context }: ActionFunctionArgs) {
   if (!category || (category.restricted && !user.canPostRestricted)) {
     return json<ActionData>(
       { errors: { categoryId: "Invalid category" } },
-      { status: 400 },
+      { status: 400 }
     );
   }
   const meta = [];
@@ -82,7 +82,7 @@ export async function action({ request, context }: ActionFunctionArgs) {
     if (required && !content) {
       return json<ActionData>(
         { errors: { meta: { name: `${name} is required` } } },
-        { status: 400 },
+        { status: 400 }
       );
     }
     meta.push({

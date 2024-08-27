@@ -59,7 +59,7 @@ function contrastColor(colorHex: string) {
   if (!rgb) return "black";
 
   const brightness = Math.round(
-    (rgb.r * 299 + rgb.g * 587 + rgb.b * 114) / 1000,
+    (rgb.r * 299 + rgb.g * 587 + rgb.b * 114) / 1000
   );
   return brightness > 125 ? "black" : "#eeeeee";
 }

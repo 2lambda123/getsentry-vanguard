@@ -13,7 +13,7 @@ import DraftNote from "./draft-note";
 import Link from "./link";
 
 const URL_REGEXP = new RegExp(
-  /(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&//=]*)/g,
+  /(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&//=]*)/g
 );
 
 const isUrl = (value: string) => value.match(URL_REGEXP);
@@ -78,7 +78,9 @@ export default function Post({
             )}
             {summary && (
               <div className="text-right flex-grow">
-                {reactions?.map((r) => <span key={r.emoji}>{r.emoji}</span>)}
+                {reactions?.map((r) => (
+                  <span key={r.emoji}>{r.emoji}</span>
+                ))}
               </div>
             )}
           </div>
@@ -126,7 +128,7 @@ export default function Post({
                 </a>
               ) : (
                 f.name
-              ),
+              )
             )}
           </CommaSeparated>
         </div>

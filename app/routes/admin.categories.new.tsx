@@ -53,7 +53,7 @@ export async function action({ request, context }: ActionFunctionArgs) {
             "An invalid reaction was provided. All values must be emoji",
         },
       },
-      { status: 400 },
+      { status: 400 }
     );
   }
 
@@ -203,7 +203,7 @@ export default function Index() {
                 onClick={(e) => {
                   e.preventDefault();
                   setCurrentEmojiList(
-                    currentEmojiList.filter((v) => v !== emoji),
+                    currentEmojiList.filter((v) => v !== emoji)
                   );
                 }}
               >

@@ -66,7 +66,7 @@ authenticator.use(
 
     return user;
   }),
-  "user-pass",
+  "user-pass"
 );
 
 authenticator.use(
@@ -83,9 +83,9 @@ authenticator.use(
         email: profile.emails[0].value,
         externalId: profile.id,
       });
-    },
+    }
   ),
-  "google",
+  "google"
 );
 
 export async function getUserId(request: Request): Promise<string | undefined> {

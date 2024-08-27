@@ -27,11 +27,11 @@ describe("POST /api/posts/$postId/reactions", () => {
           `http://localhost/api/posts/${post.id}/reactions`,
           {
             method: "POST",
-          },
+          }
         ),
         params: { postId: post.id },
         context: {},
-      }),
+      })
     );
   });
 
@@ -42,7 +42,7 @@ describe("POST /api/posts/$postId/reactions", () => {
         {
           method: "POST",
           body: JSON.stringify({ emoji: HEART }),
-        },
+        }
       ),
       params: { postId: post.id },
       context: { user: DefaultFixtures.DEFAULT_USER },
@@ -76,7 +76,7 @@ describe("POST /api/posts/$postId/reactions", () => {
         {
           method: "POST",
           body: JSON.stringify({ emoji: HEART }),
-        },
+        }
       ),
       params: { postId: post.id },
       context: { user: DefaultFixtures.DEFAULT_USER },
@@ -106,7 +106,7 @@ describe("POST /api/posts/$postId/reactions", () => {
         {
           method: "POST",
           body: JSON.stringify({ emoji: THUMBSUP }),
-        },
+        }
       ),
       params: { postId: post.id },
       context: { user: DefaultFixtures.DEFAULT_USER },

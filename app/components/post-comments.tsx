@@ -16,7 +16,7 @@ import Link from "./link";
 
 const deleteComment = async (
   postId: string,
-  commentId: string,
+  commentId: string
 ): Promise<string | undefined> => {
   const res = await fetch(`/api/posts/${postId}/comments/${commentId}`, {
     method: "DELETE",
@@ -30,7 +30,7 @@ const deleteComment = async (
 
 const toggleSubscription = async (
   postId: string,
-  active: boolean,
+  active: boolean
 ): Promise<boolean | undefined> => {
   const res = await fetch(`/api/posts/${postId}/subscription`, {
     method: active ? "POST" : "DELETE",

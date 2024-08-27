@@ -18,7 +18,7 @@ export async function loader({ request, context }: LoaderFunctionArgs) {
   const commentListPaginated = await paginate(
     getCommentList,
     { userId: user.id },
-    cursor,
+    cursor
   );
   return json({ commentListPaginated });
 }
