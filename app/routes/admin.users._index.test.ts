@@ -11,7 +11,7 @@ describe("GET /admin/users/", () => {
         }),
         params: {},
         context: { user: DefaultFixtures.DEFAULT_USER },
-      }),
+      })
     );
   });
 });

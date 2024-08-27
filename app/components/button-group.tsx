@@ -11,7 +11,7 @@ export default function ButtonGroup({
     <div
       className={classNames(
         "flex gap-2",
-        align === "center" ? "justify-center" : "justify-end",
+        align === "center" ? "justify-center" : "justify-end"
       )}
       {...props}
     />

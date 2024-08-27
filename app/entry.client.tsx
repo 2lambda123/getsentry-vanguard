@@ -16,7 +16,7 @@ Sentry.init({
       routingInstrumentation: Sentry.remixRouterInstrumentation(
         useEffect,
         useLocation,
-        useMatches,
+        useMatches
       ),
     }),
     new Sentry.Replay(),
@@ -31,12 +31,12 @@ startTransition(() => {
     document,
     <StrictMode>
       <RemixBrowser />
-    </StrictMode>,
+    </StrictMode>
   );
 });
 
 if (process.env.NODE_ENV === "development") {
   import("@spotlightjs/spotlight").then((Spotlight) =>
-    Spotlight.init({ injectImmediately: true }),
+    Spotlight.init({ injectImmediately: true })
   );
 }

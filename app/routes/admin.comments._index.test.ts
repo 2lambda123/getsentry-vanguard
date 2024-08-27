@@ -11,7 +11,7 @@ describe("GET /admin/comments/", () => {
         }),
         params: {},
         context: { user: DefaultFixtures.DEFAULT_USER },
-      }),
+      })
     );
   });
 });

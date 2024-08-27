@@ -11,7 +11,7 @@ describe("GET /admin/categories/", () => {
         }),
         params: {},
         context: { user: DefaultFixtures.DEFAULT_USER },
-      }),
+      })
     );
   });
 });

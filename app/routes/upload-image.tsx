@@ -22,7 +22,7 @@ export async function action({ request, context }: ActionFunctionArgs) {
       namespace: userId,
       filter,
       urlPrefix: "/image-uploads",
-    }),
+    })
   );
 
   const imageUrl = formData.get("file");
