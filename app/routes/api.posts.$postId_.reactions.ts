@@ -25,7 +25,7 @@ export async function action({ request, context, params }: ActionFunctionArgs) {
   if (typeof emoji !== "string" || emoji.length === 0 || !isEmoji(emoji)) {
     return json<ActionData>(
       { errors: { emoji: "Emoji is required" } },
-      { status: 400 }
+      { status: 400 },
     );
   }
   // TODO: validate emoji

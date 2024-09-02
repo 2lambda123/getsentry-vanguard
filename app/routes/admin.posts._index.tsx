@@ -19,7 +19,7 @@ export async function loader({ request, context }: LoaderFunctionArgs) {
   const postListPaginated = await paginate(
     getPostList,
     { userId: user.id },
-    cursor
+    cursor,
   );
   return json({ postListPaginated });
 }

@@ -95,7 +95,7 @@ export async function action({ request, context, params }: ActionFunctionArgs) {
             "An invalid reaction was provided. All values must be emoji",
         },
       },
-      { status: 400 }
+      { status: 400 },
     );
   }
 
@@ -132,7 +132,7 @@ export async function action({ request, context, params }: ActionFunctionArgs) {
             },
           },
         },
-      })
+      }),
     );
   }
 
@@ -143,7 +143,7 @@ export async function action({ request, context, params }: ActionFunctionArgs) {
           categoryId,
           webhookUrl: slackWebhookUrl,
         },
-      })
+      }),
     );
   }
 
@@ -155,7 +155,7 @@ export async function action({ request, context, params }: ActionFunctionArgs) {
           to: emailTo,
           subjectPrefix: emailSubjectPrefix || null,
         },
-      })
+      }),
     );
   }
 
@@ -167,7 +167,7 @@ export async function action({ request, context, params }: ActionFunctionArgs) {
         prisma.categoryMeta.update({
           where: { id },
           data,
-        })
+        }),
       );
     } else {
       queries.push(
@@ -176,7 +176,7 @@ export async function action({ request, context, params }: ActionFunctionArgs) {
             ...data,
             categoryId,
           },
-        })
+        }),
       );
     }
   });
@@ -201,7 +201,7 @@ export default function Index() {
   const errors = actionData?.errors;
 
   const [currentEmojiList, setCurrentEmojiList] = useState(
-    category.defaultEmojis || DEFAULT_EMOJIS
+    category.defaultEmojis || DEFAULT_EMOJIS,
   );
 
   const slackConfig = category.slackConfig.find(() => true);
@@ -344,7 +344,7 @@ export default function Index() {
                 onClick={(e) => {
                   e.preventDefault();
                   setCurrentEmojiList(
-                    currentEmojiList.filter((v) => v !== emoji)
+                    currentEmojiList.filter((v) => v !== emoji),
                   );
                 }}
               >

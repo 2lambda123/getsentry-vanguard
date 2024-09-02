@@ -7,7 +7,7 @@ import type { User } from "@prisma/client";
 export const buildRequest = async (
   url: string,
   options: any,
-  { user } = { user: null }
+  { user } = { user: null },
 ): Promise<Request> => {
   const session = await getMockUserSession(user);
   const cookie = await sessionStorage.commitSession(session);

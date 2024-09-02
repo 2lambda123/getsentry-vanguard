@@ -38,7 +38,7 @@ export default function Document({
       <body
         className={classNames(
           showSidebar ? "overflow-hidden" : "",
-          "text-primary-light bg-bg-light dark:bg-bg-dark dark:text-primary-dark min-h-screen overflow-x-hidden"
+          "text-primary-light bg-bg-light dark:bg-bg-dark dark:text-primary-dark min-h-screen overflow-x-hidden",
         )}
       >
         {children}

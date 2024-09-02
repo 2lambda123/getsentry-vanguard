@@ -15,7 +15,7 @@ describe("GET /admin/feeds/$feedId", () => {
         }),
         params: { feedId: feed.id },
         context: { user: DefaultFixtures.DEFAULT_USER },
-      })
+      }),
     );
   });
 });
@@ -31,7 +31,7 @@ describe("POST /admin/feeds/$feedId", () => {
         }),
         params: { feedId: feed.id },
         context: { user: DefaultFixtures.DEFAULT_USER },
-      })
+      }),
     );
   });
 });

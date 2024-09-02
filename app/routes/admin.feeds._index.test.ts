@@ -11,7 +11,7 @@ describe("GET /admin/feeds/", () => {
         }),
         params: {},
         context: { user: DefaultFixtures.DEFAULT_USER },
-      })
+      }),
     );
   });
 });

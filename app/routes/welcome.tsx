@@ -32,7 +32,7 @@ export async function action({ request, context }: ActionFunctionArgs) {
       filter,
       namespace: userId,
       urlPrefix: "/image-uploads",
-    })
+    }),
   );
   const name = formData.get("name");
   if (typeof name !== "string" || name.length === 0) {
