@@ -116,7 +116,7 @@ describe("notify", () => {
     const message = outbox[0];
 
     const pictureUrl = message.html.match(
-      /http\:\/\/localhost\/img\/placeholder-avatar.png/
+      /http\:\/\/localhost\/img\/placeholder-avatar.png/,
     );
     expect(pictureUrl[0]).toBeDefined();
 

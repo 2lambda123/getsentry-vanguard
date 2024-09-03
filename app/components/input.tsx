@@ -12,7 +12,7 @@ export default function Input({
     <div
       className={classNames(
         "flex gap-x-2 focus-within:border-borderfocus-light dark:focus-within:border-borderfocus-dark outline:border-borderfocus-light dark:outline:border-borderfocus-dark items-center bg-bg-light dark:bg-bg-dark border border-border-light dark:border-border-dark py-2 px-3",
-        variant === "search" ? "rounded-full" : "rounded-md"
+        variant === "search" ? "rounded-full" : "rounded-md",
       )}
     >
       {variant === "search" && (

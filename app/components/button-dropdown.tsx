@@ -56,7 +56,7 @@ export default function ButtonDropdown({
       <div
         className={classNames(
           "whitespace-nowrap text-primary-light dark:text-primary-dark bg-bg-light dark:bg-bg-dark shadow-lg rounded absolute bottom-0 flex-col",
-          isOpen ? "flex" : "hidden"
+          isOpen ? "flex" : "hidden",
         )}
       >
         {children}

@@ -27,7 +27,7 @@ export default function ClusteredPostList({
           const postReactions = reactions[post.id];
           const totalReactions = postReactions.reduce(
             (value, r) => value + r.total,
-            0
+            0,
           );
           const totalComments = commentCounts[post.id];
           return (

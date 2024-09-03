@@ -71,7 +71,7 @@ export async function countCommentsForPosts({
 export async function announceComment(
   post: Post,
   comment: PostComment,
-  parent?: PostComment
+  parent?: PostComment,
 ) {
   const mailConfig = await prisma.categoryEmail.findMany({
     where: {

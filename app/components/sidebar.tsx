@@ -15,7 +15,7 @@ export function Sidebar({
           "fixed xl:right-0 xl:left-auto xl:w-[30rem] top-0 bottom-0 px-20 py-24 z-0",
           showSidebar
             ? "inset-0 z-20 bg-layer100-light dark:bg-layer100-dark"
-            : "hidden xl:block"
+            : "hidden xl:block",
         )}
         {...props}
       >

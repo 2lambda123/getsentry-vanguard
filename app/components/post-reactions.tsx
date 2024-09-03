@@ -8,7 +8,7 @@ import Picker from "~/components/emoji-picker";
 
 const toggleReaction = async (
   postId: string,
-  emoji: string
+  emoji: string,
 ): Promise<number | undefined> => {
   const res = await fetch(`/api/posts/${postId}/reactions`, {
     method: "POST",
@@ -44,11 +44,11 @@ export default function PostReactions({
   const defaultEmojis = useMemo(
     () =>
       post.category.defaultEmojis.length ? post.category.defaultEmojis : ["❤️"],
-    [post.category.defaultEmojis]
+    [post.category.defaultEmojis],
   );
 
   const defaults = defaultEmojis.filter(
-    (d) => !reactions.find((r) => r.emoji === d)
+    (d) => !reactions.find((r) => r.emoji === d),
   );
   const initialEmojiList = [
     ...defaults.map((d) => ({ selected: false, count: 0, value: d })),
@@ -63,7 +63,7 @@ export default function PostReactions({
 
   useEffect(() => {
     const defaults = defaultEmojis.filter(
-      (d) => !reactions.find((r) => r.emoji === d)
+      (d) => !reactions.find((r) => r.emoji === d),
     );
     const initialEmojiList = [
       ...defaults.map((d) => ({ selected: false, count: 0, value: d })),
