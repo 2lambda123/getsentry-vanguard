@@ -162,8 +162,8 @@ dependencies:
     specifier: ^4.20.0
     version: 4.20.0
   happy-dom:
-    specifier: ^15.10.1
-    version: 15.10.1
+    specifier: ^15.10.2
+    version: 15.10.2
   isbot:
     specifier: ^3.8.0
     version: 3.8.0
@@ -268,7 +268,7 @@ dependencies:
     version: 4.3.2(typescript@5.4.3)(vite@5.4.10)
   vitest:
     specifier: ^0.33.0
-    version: 0.33.0(happy-dom@15.10.1)
+    version: 0.33.0(happy-dom@15.10.2)
 
 devDependencies:
   "@spotlightjs/spotlight":
@@ -4625,7 +4625,7 @@ packages:
       std-env: 3.7.0
       test-exclude: 6.0.0
       v8-to-istanbul: 9.2.0
-      vitest: 0.33.0(happy-dom@15.10.1)
+      vitest: 0.33.0(happy-dom@15.10.2)
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -8208,10 +8208,10 @@ packages:
       through2: 2.0.5
     dev: false
 
-  /happy-dom@15.10.1:
+  /happy-dom@15.10.2:
     resolution:
       {
-        integrity: sha512-FuGnj/qIB4QnBL6fWmD7Wnh6STxevLgOVWB6+nopDGgWG1+t9CXkNB2ldZ+iqwD2UKxD2D0SU8el8A6AX6Q1+g==,
+        integrity: sha512-NbA5XrSovenJIIcfixCREX3ZnV7yHP4phhbfuxxf4CPn+LZpz/jIM9EqJ2DrPwgVDSMoAKH3pZwQvkbsSiCrUw==,
       }
     engines: { node: ">=18.0.0" }
     dependencies:
@@ -14504,7 +14504,7 @@ packages:
       fsevents: 2.3.3
     dev: false
 
-  /vitest@0.33.0(happy-dom@15.10.1):
+  /vitest@0.33.0(happy-dom@15.10.2):
     resolution:
       {
         integrity: sha512-1CxaugJ50xskkQ0e969R/hW47za4YXDUfWJDxip1hwbnhUjYolpfUn2AMOulqG/Dtd9WYAtkHmM/m3yKVrEejQ==,
@@ -14551,7 +14551,7 @@ packages:
       cac: 6.7.14
       chai: 4.4.1
       debug: 4.3.4(supports-color@5.5.0)
-      happy-dom: 15.10.1
+      happy-dom: 15.10.2
       local-pkg: 0.4.3
       magic-string: 0.30.8
       pathe: 1.1.2
